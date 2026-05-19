@@ -554,3 +554,30 @@ jobs
 6. `ps`, `ps aux --sort=-%mem | head`, `ps aux --sort=-%cpu | head`.
 7. `ps -p 1 -f`.
 8. `jobs` после остановки `find` и `man bash`.
+
+
+```bash
+cd ~
+
+ls -l file1 file2 file3 rfile1 rfile2 rfile3
+
+cp file3 /home/shared/pub/
+ls -l /home/shared/pub
+cat /home/shared/pub/file3
+rm /home/shared/pub/file3
+ls -l /home/shared/pub
+
+cp file3 /home/shared/upload/
+ls -l /home/shared/upload
+cat /home/shared/upload/file3
+rm /home/shared/upload/file3
+
+cp file3 /home/shared/temp/
+ls -l /home/shared/temp
+cat /home/shared/temp/file3
+rm /home/shared/temp/file3
+ls -l /home/shared/temp
+
+cp rfile1 /home/shared/temp/
+ls -l /home/shared/temp
+```
