@@ -557,27 +557,7 @@ jobs
 
 
 ```bash
-cd ~
-
-ls -l file1 file2 file3 rfile1 rfile2 rfile3
-
-cp file3 /home/shared/pub/
-ls -l /home/shared/pub
-cat /home/shared/pub/file3
-rm /home/shared/pub/file3
-ls -l /home/shared/pub
-
-cp file3 /home/shared/upload/
-ls -l /home/shared/upload
-cat /home/shared/upload/file3
-rm /home/shared/upload/file3
-
-cp file3 /home/shared/temp/
-ls -l /home/shared/temp
-cat /home/shared/temp/file3
-rm /home/shared/temp/file3
-ls -l /home/shared/temp
-
-cp rfile1 /home/shared/temp/
-ls -l /home/shared/temp
+mkdir -p /home/shared/exchange
+chmod 1777 /home/shared/exchange
+ls -ld /home/shared/exchange
 ```
