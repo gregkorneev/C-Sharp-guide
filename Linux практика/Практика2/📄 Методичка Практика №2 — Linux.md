@@ -557,7 +557,8 @@ jobs
 
 
 ```bash
-mkdir -p /home/shared/exchange
-chmod 1777 /home/shared/exchange
-ls -ld /home/shared/exchange
+ps aux --sort=-%mem | head
+ps aux --sort=-%cpu | head
+ps aux | grep init
+ps -p 1 -f
 ```
